@@ -12,29 +12,50 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Pilih menu")
+            Console.WriteLine("1.Penambahan");
+            Console.WriteLine("2. Pengurangan");
+            Console.WriteLine("3. Perkalian");
+            Console.WriteLine("4. Pembagian");
+
+            Console.Write("Pilih [1...4]: ");
+            string operand = Console.ReadLine();
+
             if (operand == "1")
-                Console.Write("Bilangan 1:");
-            int a = int.Parse(Console.ReadLjne())
             {
-                Console.Write(penambahan(a, b));
+                Console.Write("Bilangan 1: ");
+                int a = int.Parse(Console.ReadLine());
+                Console.Write("Bilangan 2: ");
+                int b = int.Parse(Console.ReadLine());
+
+                Console.Write("{0} + {1} = {2}", a, b, penambahan(a, b));
             }
-            else if (operand == "2")
-                Console.Write("Bilangan 2:");
-            int a = int.Parse(Console.ReadLjne())
+            else if (operand == "1")
             {
-                Console.Write(pengurangan(a, b));
+                Console.Write("Bilangan 1: ");
+                int a = int.Parse(Console.ReadLine());
+                Console.Write("Bilangan 2: ");
+                int b = int.Parse(Console.ReadLine());
+
+                Console.Write("{0} - {1} = {2}", a, b, pengurangan(a, b));
             }
-            else if (operand == "3")
-                Console.Write("Bilangan 3:");
-            int a = int.Parse(Console.ReadLjne())
+            else if (operand == "1")
             {
-                Console.Write(pembagian(a, b));
+                Console.Write("Bilangan 1: ");
+                int a = int.Parse(Console.ReadLine());
+                Console.Write("Bilangan 2: ");
+                int b = int.Parse(Console.ReadLine());
+
+                Console.Write("{0} * {1} = {2}", a, b, pengalian(a, b));
             }
-            else if (operand == "4")
-                Console.Write("Bilangan 4:");
-            int a = int.Parse(Console.ReadLjne())
+            else if (operand == "1")
             {
-                Console.Write(pengalian(a, b));
+                Console.Write("Bilangan 1: ");
+                int a = int.Parse(Console.ReadLine());
+                Console.Write("Bilangan 2: ");
+                int b = int.Parse(Console.ReadLine());
+
+                Console.Write("{0} / {1} = {2}", a, b, pembagian(a, b));
             }
         }
 
