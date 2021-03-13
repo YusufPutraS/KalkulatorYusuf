@@ -97,7 +97,12 @@ Console.Title = "Aplikasi Kalkulator";
             Console.WriteLine("\nTekan sembarang key untuk keluar");
             console.ReadKey(
 
-            ExitProgram();
+            Console.WriteLine();
+            Console.WriteLine("Tekan sembarang key untuk keluar");
+            Console.ReadKey();
+
+Environment.Exit(0);
+  
         }
 
 
